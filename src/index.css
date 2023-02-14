@@ -1,13 +1,329 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+img{
+    vertical-align: middle;
+}
+body{
+    font-family: 'Nunito', sans-serif;
+}
+.container{
+    padding: 30px;
+    background: #fff;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.registration{
+    width: 500px;
+    text-align: center;
+    padding: 50px 0;
+    margin: 0 auto;
+}
+.heading_icon{
+    width: 46px;
+    height: 46px;
+    color: #0077B5;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.heading , .heading_login{
+    color: #11175D;
+    font-size:34.4px;
+    font-weight: 700;
+    padding: 42px 0 11px 0;
+}
+.heading_login{
+    padding: 18px 0 11px 0;
+}
+.sub_heading{
+    color: #11175D;
+    font-size:20.64px;
+    font-weight: 400;
+}
+.inputs{
+   width: 497px;
+   margin: 0 auto;
+}
+.input_items{
+    margin-top: 42px !important;
+    width: 100%;
+}
+.registrationLink{
+    color: #11175D;
+    font-size:16px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.registrationLink a{
+    text-decoration: none;
+    color: #11175D;
+    font-weight: 600;
+}
+.error{
+    width: 100%;
+    margin: 10px 0;
+}
+.eyeicon{
+position: absolute;
+bottom: 22%;
+right: 4.4%;
+}
+.progress{
+margin-top: 5px;
+}
+.oval{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.google__img{
+   width: 100%;
+}
+.forgotpassword{
+    font-size: 16px !important;
+    color: #676767 !important;
+    text-transform: capitalize !important;
+}
+#modal-modal-title{
+    text-align: center;
+}
+.reginputfgp{
+    width: 100%;
+}
+.grid_holder{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 100px 0 100px !important;
+    background: #E5E5E5;
+}
+.BannerGrid , .bannerInner_text{
+    width: 70%;
+}
+.ItemGrid ,.bannerInner_Item{
+    width: 25%;
+}
+.bannerInner_text{
+    width: 70%;
+}
+.bannerInner_Item{
+    width: 20%;
+}
+
+.menubar{
+    padding: 17px 40px ;
+    color: #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bannerImg{
+    width: 100% !important;
+    height: 180px !important;
+    position: relative;
+}
+.bannerimgItem{
+    width: 100% !important;
+    height: 100% !important;
+}
+.edit_profile{
+    width: 132px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background: #fff;
+    position: absolute;
+    top: 15%;
+    right: 3%;
+}
+.banner_inner{
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+}
+.bannerInner_text{
+    padding: 25px 47px 35px 25px;
+}
+.text_items , .location{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 9px;
+}
+.location_item {
+    color: #181818;
+    font-size: 14px;
+    font-weight: 400px;
+    padding-left: 9px;
+}
+.login_item ,.aboutTitle ,.Group_Subtitle{
+    color: #181818;
+    font-size: 18px;
+    font-weight: 700px;
+    text-transform: capitalize;
+}
+.login_text , .about_item ,.experience_heading , .Group_Subtitle-lower, .post_login_item{
+    color: #181818;
+    font-size: 14px;
+    font-weight: 400px;
+    line-height: 21px;
+}
+.bannerInner_Item{
+    width: 200px;
+    height: 200px;
+    margin: -50px 70px ;
+    z-index: 1;  
+}
+.loginImgItem{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid #fff; 
+}
+.tabs{
+    padding: 40px 0;
+}
+.about{
+    background: #fff;
+}
+.about_more{
+    color: #0275B1;
+    font-size: 12px;
+    font-weight: 500px;
+    text-transform: uppercase;
+}
+.about_item{
+    padding: 10px 0 20px 0;
+}
+.project ,.posting_item{
+    margin: 20px 0;
+}
+.projectHeading, .ProjectImg , .posting_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.experienc , .education{
+    display: flex;
+    padding: 20px 0;
+}
+.projectHeading , .experience_title{
+    padding-bottom:20px ;
+}
+.project_inner{
+    width: 260px !important;
+    height: 160px !important;
+}
+.pojectimg_item{
+    width: 100% !important;
+    height: 100% !important;
+}
+.experienc_text , .post-login_text{
+    color: #181818;
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px 20px 5px 0;
+}
+.date, .occupation{
+    display: flex;
+    padding-right: 20px;
+}
+.experience_heading{
+    padding-bottom: 10px;
+}
+.experience_Item{
+    padding-left: 20px;
+}
+.groupList_img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.listImg{
+    width: 100%;
+    height: 100%;
+}
+.groupBox_holder{
+    text-align: center;
+}
+.boxHolder{
+    border: 1px solid #6767673d;
+    margin: 10px;
+    background: #fff;
+    padding: 10px;
+}
+img{
+    vertical-align: middle;
+}
+.Group_Subtitle-lower {
+    padding: 5px 0;
+}
+.Group_Subtitle{
+    padding: 20px 0 0 0 ;
+}
+.img-preview{
+    width: 80px !important;
+    height: 80px !important;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #676767;
+  }
+  .current_image{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+  }
+  .postText{
+    background: #fff;
+    text-align: center;
+    padding: 26px ;
+  }
+  .postImgItem{
+    width: 100px;
+    height: 100px;
+    margin: -40px auto 0px auto;
+    z-index: 2222;
+  }
+  .postLoginImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 10px solid #fff;
+  }
+  .post_login_item{
+    padding: 34px 0 5px 0;
+  }
+.posting_inner{
+    align-items: center;
+}
+.newPOst{
+    border-bottom: 1px solid #676767;
+}
+.icon{
+   margin-bottom: -30px; 
+}
+.icon_item{
+    margin: 14px ;
 }

@@ -1,0 +1,19 @@
+[debug] [2023-02-10T18:30:06.052Z] ----------------------------------------------------------------------
+[debug] [2023-02-10T18:30:06.055Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\POPY\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login
+[debug] [2023-02-10T18:30:06.055Z] CLI Version:   11.22.0
+[debug] [2023-02-10T18:30:06.056Z] Platform:      win32
+[debug] [2023-02-10T18:30:06.056Z] Node Version:  v18.14.0
+[debug] [2023-02-10T18:30:06.058Z] Time:          Sat Feb 11 2023 00:30:06 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-02-10T18:30:06.058Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-10T18:30:06.066Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[info] i  Firebase optionally collects CLI and Emulator Suite usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+ 
+[debug] [2023-02-10T18:30:06.948Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-02-10T18:30:06.949Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=590402707&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
