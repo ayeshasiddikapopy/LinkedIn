@@ -14,7 +14,6 @@ body{
     padding: 30px;
     background: #fff;
 }
-
 .registration{
     width: 500px;
     text-align: center;
@@ -256,15 +255,14 @@ margin-top: 5px;
 .groupBox_holder{
     text-align: center;
 }
+
 .boxHolder{
     border: 1px solid #6767673d;
     margin: 10px;
     background: #fff;
     padding: 10px;
 }
-img{
-    vertical-align: middle;
-}
+
 .Group_Subtitle-lower {
     padding: 5px 0;
 }
@@ -327,3 +325,45 @@ img{
 .icon_item{
     margin: 14px ;
 }
+
+.img-Holder{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+.img-preview{
+    width: 100% !important;
+    height: 100%!important;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 1px solid #67676739;
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+.backToProfile_icon{
+    margin-left: 20px;
+    font-size: 20px;
+}
+  .box_Item{
+    width: 350px;
+    text-align: center;
+    border: 1px solid #67676737;
+    padding: 10px 0;
+    margin: 20px ;
+  }
+  .friendTitle{
+    color: #11175D;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+  .alert{
+    width: 350px;
+  }

@@ -28,12 +28,12 @@ const Rootlayout = () => {
   let navigate = useNavigate();
   let dispatch = useDispatch();
   let data = useSelector(state => state)
-  console.log(Boolean(!data.userdata.userInfo))
+  // console.log(Boolean(!data.userdata.userInfo))
 
   // navigate to logins page
   useEffect(() => {
     if(!data.userdata.userInfo){
-    console.log('works')
+    // console.log('works')
     navigate('/login')
   }
   // else{
@@ -55,7 +55,6 @@ const Rootlayout = () => {
       dispatch(activeUser(null)) // remove from redux
       navigate("/login")
     })
-    console.log('word')
   }
   return (
     <React.Fragment>

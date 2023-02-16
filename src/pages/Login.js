@@ -29,12 +29,15 @@ const Login = () => {
   const auth = getAuth();
   let navigate = useNavigate();
   let dispatch = useDispatch();
+
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
   let [show, setShow] = useState(false)
   let [loader, setLoader] = useState(false);
   let [progress , setProgress] = useState(0);
+
   let [formData, setFormdata] = useState({
     email:"",
     password: "",
@@ -141,7 +144,6 @@ const style = {
       signInWithEmailAndPassword(auth, formData.email, formData.password)
       .then((userCredential) => {
 
-        console.log('login',userCredential)
         dispatch(activeUser(userCredential.user))
         localStorage.setItem('userInfo' , JSON.stringify(userCredential.user))
 
@@ -150,7 +152,7 @@ const style = {
           setTimeout(()=> {
             navigate("/profile")
           },1000)
-         console.log('email sends')
+        //  console.log('email sends')
        }else{
         toast("varify email & try again!")
        }
@@ -160,10 +162,13 @@ const style = {
         const errorCode = error.code;
         if(errorCode.includes('auth/user-not-found')){
           setError({...error, email:'user not found'})
+          toast("user not found !")
         }
-        console.log(errorCode)
+        else if(errorCode.includes('auth/wrong-password')){
+          setError({...error, password:'wrong password'})
+          toast("wrong password !")
+        }
         setLoader(false)
-        toast("user not found !")
       })
     }
   }
@@ -237,7 +242,7 @@ const style = {
         </div> 
         <ToastContainer
         position="bottom-center"
-        autoClose={5000}
+        autoClose={800}
         hideProgressBar={false}
         newestOnTop={false}
         closeOnClick

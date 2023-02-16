@@ -15,11 +15,10 @@ import { getDatabase, ref, set , push} from "firebase/database";
 
 
 
-// sign up button
+// sign up buttonz
 const CommonButton = styled(Button)({
   width:'100%',
   fontSize: 16,
-  padding: '20px 0',
   margin: '50px 0',
   backgroundColor: '#086FA4',
   borderRadius:'86px',
@@ -39,9 +38,9 @@ const style = {
 };
 
 const Registration = () => {
+  const db = getDatabase();
   const auth = getAuth();
   let navigate = useNavigate(); 
-  const db = getDatabase();
   const provider = new GoogleAuthProvider();
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
@@ -151,6 +150,7 @@ let handleSignin = () => {
       console.log(user.user)
       updateProfile(auth.currentUser, {
         displayName: formData.fullname
+       
       }).then(() => {
         set(ref(db, 'users/' + user.user.uid), {
           displayName : user.user.displayName,
